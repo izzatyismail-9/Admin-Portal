@@ -1,0 +1,129 @@
+/* PLAN A */
+
+sidenav{
+    list-style: :none;
+}
+sidenav:first-child{
+    border-left:1px solid gray;
+}
+sidenav{
+    border-right: 1px solid gray;
+    display: inline-block;
+    padding: 5px 20px;
+    color: #FFF;
+    background: #000;
+    margin:0;
+}
+/* Style the navigation bar */
+.navbar {
+ width: 100%;
+ background-color: #555;
+ overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+ float: left;
+ text-align: center;
+ padding: 12px;
+ color: white;
+ text-decoration: none;
+ font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+ background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+ background-color: #4CAF50;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+ .navbar a {
+   float: none;
+   display: block;
+ }
+}
+
+
+
+
+
+
+/* PLAN B */
+body {
+    padding-top: 56px;
+}
+
+.sticky-offset {
+    top: 56px;
+}
+
+#body-row {
+    margin-left:0;
+    margin-right:0;
+}
+#sidebar-container {
+    min-height: 100vh;
+    background-color: #09364F;
+    padding: 0;
+}
+
+/* Sidebar sizes when expanded and expanded */
+.sidebar-expanded {
+    width: 230px;
+}
+.sidebar-collapsed {
+    width: 60px;
+}
+
+/* Menu item*/
+#sidebar-container .list-group a {
+    height: 50px;
+    color: white;
+}
+
+/* Submenu item*/
+#sidebar-container .list-group .sidebar-submenu a {
+    height: 45px;
+    padding-left: 30px;
+}
+.sidebar-submenu {
+    font-size: 0.9rem;
+}
+
+/* Separators */
+.sidebar-separator-title {
+    background-color: #333;
+    height: 35px;
+}
+.sidebar-separator {
+    background-color: #333;
+    height: 25px;
+}
+.logo-separator {
+    background-color: #333;
+    height: 60px;
+}
+
+/* Closed submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+  content: " \f0d7";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+/* Opened submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+  content: " \f0da";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+/* PLAN B */
