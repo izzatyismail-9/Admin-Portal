@@ -42,6 +42,21 @@
                 border-color: #DCDCDC;
                 color: #737373;
             }
+            table {
+                  font-family: arial, sans-serif;
+                  border-collapse: collapse;
+                  width: 100%;
+                }
+
+                td, th {
+                  border: 1px solid #dddddd;
+                  text-align: left;
+                  padding: 8px;
+                }
+
+                tr:nth-child(even) {
+                  background-color: #dddddd;
+                }
         </style>
     </head>
     <body>
@@ -157,20 +172,40 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="well" style="border-radius: 15px; height:auto;">
-                                    <h4>Table</h4>
+                                    <table>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Floor Name</th>
+                                            <th>Description</th>
+                                            <th>Created Date and Time</th>
+                                            <th>Updated Date and Time</th>
+                                            <th>Action</th>
+                                        </tr>
+                                        <tr>
+                                            <th>1</th>
+                                            <th>Ground Floor</th>
+                                            <th>Parking</th>
+                                            <th>1st March 2021 14:28:30</th>
+                                            <th>None</th>
+                                            <th>
+                                                <button type="button" onclick="" style="background-color: #008CBA; font-size: 12px; border-radius: 5px;">Edit</button>
+                                                <button type="button" onclick="" style="background-color: #f44336; font-size: 12px; border-radius: 5px;">Active/Deactive</button>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>1</th>
+                                            <th>1st Floor</th>
+                                            <th>Women Fashion</th>
+                                            <th>24th September 1999 13:38:30</th>
+                                            <th>None</th>
+                                            <th>
+                                                <button type="button" onclick="" style="background-color: #008CBA; font-size: 12px; border-radius: 5px;">Edit</button>
+                                                <button type="button" onclick="" style="background-color: #f44336; font-size: 12px; border-radius: 5px;">Active/Deactive</button>
+                                            </th>
+                                        </tr>
 
                                 </div>
                             </div
-
-
-
-
-
-
-
-
-
-
 
 <script>
 
